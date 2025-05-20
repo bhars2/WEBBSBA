@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>BSBA Staff - SMIT Tacurong</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: #f0f4f8;
+      color: #333;
+      padding: 20px;
+    }
+
+    .back-button {
+      margin-bottom: 20px;
+    }
+
+    .back-button button {
+      padding: 10px 20px;
+      font-size: 14px;
+      background-color: #0073e6;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    .back-button button:hover {
+      background-color: #005bb5;
+    }
+
+    h1 {
+      text-align: center;
+      margin-bottom: 30px;
+      color: #005b96;
+      text-shadow: 1px 1px 4px #ccc;
+    }
+
+    .staff-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 20px;
+      padding: 10px;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    .staff-card {
+      background: #fff;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+      text-align: center;
+      overflow: hidden;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .staff-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 6px 16px rgba(0, 0, 0, 0.2);
+    }
+
+    .staff-card img {
+      width: 100%;
+      height: 250px;
+      object-fit: cover;
+    }
+
+    .staff-card h3 {
+      margin: 15px 0 5px;
+      color: #0073e6;
+    }
+
+    .staff-card p {
+      font-size: 0.9em;
+      margin-bottom: 15px;
+      color: #666;
+    }
+
+    footer {
+      text-align: center;
+      margin-top: 50px;
+      padding: 10px;
+      background-color: #eee;
+      font-size: 0.9em;
+    }
+
+    @media (max-width: 600px) {
+      .staff-card img {
+        height: 200px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="back-button">
+    <button onclick="window.location.href='mains.html'">← Back</button>
+  </div>
+
+  <h1>Meet the BSBA Staff - SMIT Tacurong</h1>
+
+  <div class="staff-grid">
+    <div class="staff-card">
+      <img src="staff1.jpg" alt="Staff 1">
+      <h3>sir. Giovanni P. Subaldo, MBA-CAR</h3>
+      <p>Program Chair - BSBA</p>
+    </div>
+    <div class="staff-card">
+      <img src="staff2.jpg" alt="Staff 2">
+      <h3>sir. Junrel S. Pelong</h3>
+      <p>Faculty - Financial Management</p>
+    </div>
+    <div class="staff-card">
+      <img src="staff3.jpg" alt="Staff 3">
+      <h3>sir. Larry M. Forro</h3>
+      <p>Faculty - Marketing</p>
+    </div>
+    <div class="staff-card">
+      <img src="staff4.jpg" alt="Staff 4">
+      <h3>ma'am. Lea C. Celestial, LPT</h3>
+      <p>Faculty - Business Law</p>
+    </div>
+    <!-- Add more staff cards here -->
+  </div>
+
+  <footer>
+    &copy; 2025 Southern Mindanao Institute of Technology - BSBA Department
+  </footer>
+
+</body>
+</html>
